@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Homepage</title>
+    <link rel="stylesheet" href="./styles/stylesheet.css" />
+    <link rel="stylesheet" href="./styles/pet-page-styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="./images/Paradigm_Pet_logo.png"
+            alt="Paradigm Pet Professionals Logo"
+        /></a>
+      </div>
+
+      <div class="nav-container">
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Nav -->
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Pet Care</a>
+              <ul class="dropdown-menu">
+                <li><a href="cats.html">Cats: Care & Nutrition</a></li>
+                <li><a href="dogs.html">Dogs: Training & Health</a></li>
+                <li>
+                  <a href="small-animals.html"
+                    >Small Animals: Housing & Care</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </nav>
+
+        <!-- Search -->
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">
+            <img src="./images/search-icon.png" alt="Search Icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="hero">
+        <div class="hero-image">
+          <img src="./images/hero-img-ppp-min.jpg" alt="Happy pets" />
+        </div>
+        <div class="hero-content">
+          <h1>Your Partner in Pet Care and Wellness</h1>
+          <p>
+            At Paradigm Pet Professionals we strive to provide you with all the
+            tools necessary to provide the best quality of life to your furry
+            family member. We strive to bring top tier services, product
+            recommendations, and advice to equip you and your pet for success!
+            We believe Ppets are nature&apos;s gift to humanity as it has been
+            scientifically proven they increase the longevity of both the
+            owners&apos; and pets&apos; lives and improve the overall quality of
+            life for everyone involved.
+          </p>
+          <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+
+      <section>
+        <div class="why-choose-us">
+          <div class="why-choose-us-wrapper">
+            <h2 class="gradient gradient-title">Why Choose Us</h2>
+          </div>
+          
+          <p>
+            Pets are nature's gift to humanity. It has been scientifically
+            proven that opening our homes and hearts to a pet increases our
+            longevity and improves our overall quality of life as well as the
+            lives of our pets. At Pet Paradigm Professionals, our mission is to
+            offer resources to help you care for your furry, scaly, feathery,
+            and slimy loved ones. Our pet experts—or “Pexperts”—have been
+            working with pet owners and professionals alike for the past twelve
+            years. They offer one-on-one consultations with current and
+            prospective pet owners as well as group presentations designed for
+            veterinary, pet shelter, and pet breeding professionals.
+          </p>
+          <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+      </section>
+
+      <!-- Adopt a pet -->
+      <section>
+        <div class="adopt-a-pet">
+          <h2>Want to Add a Furry Friend to Your Family?</h2>
+          <p>
+            Looking for your new best friend? The following organizations can
+            help you find and adopt the perfect companion:
+          </p>
+
+          <div class="pet-content-item small-animal">
+            <details>
+              <summary>General Pet Resources</summary>
+              <p>
+                For general pet information check out
+                <strong
+                  ><a
+                    href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources"
+                    target="_blank"
+                    >bestfriends.org</a
+                  ></strong
+                >
+              </p>
+            </details>
+            <details>
+              <summary>ASPCA</summary>
+              <p>
+                Check out
+                <strong
+                  ><a
+                    href="https://www.aspca.org/"
+                    target="_blank"
+                    >ASPCA</a
+                  ></strong
+                >
+              </p>
+            </details>
+            <details>
+              <summary>Fish Rescue</summary>
+              <p>
+                Check out
+                <strong
+                  ><a
+                    href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"
+                    target="_blank"
+                    >Sterling Shelter Fish Rescue</a
+                  ></strong
+                >
+              </p>
+            </details>
+            <details>
+              <summary>Snake Rescue</summary>
+              <p>
+                Check out
+                <strong
+                  ><a
+                    href="https://savethesnakes.org/snakerescuecall/"
+                    target="_blank"
+                    >Save the Snakes</a
+                  ></strong
+                >
+              </p>
+            </details>
+            <details>
+              <summary>Bird Rescue</summary>
+              <p>
+                Check out
+                <strong
+                  ><a
+                    href="https://ftlob.rescuegroups.org/"
+                    target="_blank"
+                    >Bird Rescue Groupts</a
+                  ></strong
+                >
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pet Pages Section -->
+      <section id="cats" class="pet-section">
+        <div class="pet-image">
+          <img src="./images/cat-owner-min.jpg" alt="Cat owner" />
+        </div>
+        <div class="pet-content">
+          <h2>Cats: Care & Nutrition</h2>
+          <p>
+            Discover expert tips and resources on how to care for your feline
+            friends, ensuring they live healthy and happy lives.
+          </p>
+          <a href="cats.html" class="cta-button">Learn More</a>
+        </div>
+      </section>
+
+      <section id="dogs" class="pet-section reverse">
+        <div class="pet-image">
+          <img src="./images/dog-owner-min.jpg" alt="Dog owner" />
+        </div>
+        <div class="pet-content">
+          <h2>Dogs: Training & Health</h2>
+          <p>
+            From training advice to health tips, explore everything you need to
+            know to keep your dog in great shape.
+          </p>
+          <a href="dogs.html" class="cta-button">Learn More</a>
+        </div>
+      </section>
+
+      <section id="small-animals" class="pet-section">
+        <div class="pet-image">
+          <img src="./images/guniea-owner-min.jpg" alt="Guinea pig" />
+        </div>
+        <div class="pet-content">
+          <h2>Small Animals: Housing & Care</h2>
+          <p>
+            Learn how to create the perfect environment for your feathered
+            friends and ensure their well-being.
+          </p>
+          <a href="small-animals.html" class="cta-button">Learn More</a>
+        </div>
+      </section>
+
+      <section class="pet-section reverse">
+        <div class="pet-image">
+          <img src="./images/FAQ-image-min.jpg" alt="Guinea pig" />
+        </div>
+        <div class="pet-content">
+          <h2>FAQs</h2>
+          <p>
+            Learn how to create the perfect environment for your little friends
+            and ensure their well-being.
+          </p>
+          <a href="faqs.html" class="cta-button">Read more Faqs</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="contact-content" id="contact-content">
+          <div class="contact-text">
+            <h2>Schedule a Consultation with a Pexpert!</h2>
+            <p>
+              Have questions or need assistance? Reach out to us, and we&apos;ll
+              be happy to help! Looking for basic pet care advice for the most
+              common type of pets? Need additional help determining which type
+              of pet is right for you and your family? We will work with you and
+              provide tailored evidence-based pet care to ensure lifelong health
+              and wellness of your new companion.
+            </p>
+            <div class="contact-btns">
+              <button class="cta-button">
+                <a href="tel:18888888888">Call Us</a>
+              </button>
+              <button class="cta-button">
+                <a href="mailto:contact@fakeemail.com">Email Us</a>
+              </button>
+            </div>
+          </div>
+          <div>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    title="Enter your full name"
+                  />
+                </div>
+                <div>
+                  <label for="name">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    title="Enter a valid email address"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                    required
+                    title="Enter a valid phone number"
+                  />
+                </div>
+                <div>
+                  <label for="timezone">Timezone</label>
+                  <input
+                    id="timezone"
+                    type="text"
+                    name="timezone"
+                    placeholder="Timezone"
+                    required
+                    title="Enter your timezone"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <label for="pet-name">Pet Name</label>
+                  <input
+                    id="pet-name"
+                    type="text"
+                    name="pet-name"
+                    placeholder="Pet Name"
+                    required
+                    title="Enter your pet's name"
+                  />
+                </div>
+                <div class="pet-type">
+                  <label for="pet-type">Pet Type</label>
+                  <select id="pet-type" name="pet-type" required>
+                    <option value="" disabled selected>Select Pet Type</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="small-animal">Guinea Pig</option>
+                    <option value="small-animal">Hamster</option>
+                    <option value="small-animal">Gerbil</option>
+                    <option value="small-animal">Rabbit</option>
+                    <option value="small-animal">Ferret</option>
+                    <option value="small-animal">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <input
+                type="number"
+                name="pet-age"
+                placeholder="Pet Age"
+                required
+                title="Enter your pet's age"
+              />
+
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+              ></textarea>
+              <button type="submit" class="cta-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer-content">
+        <!-- Quick Links -->
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="cats.html">Cats: Care & Nutrition</a></li>
+            <li><a href="dogs.html">Dogs: Training & Health</a></li>
+            <li>
+              <a href="small-animals.html">Small Animals: Housing & Care</a>
+            </li>
+            <li><a href="faqs.html">Faqs</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Email: info@Paradigm Pet Professionals.com</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+      </section>
+
+      <section class="footer-bottom">
+        <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+      </section>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+        });
+      });
+
+      function submitForm() {
+        alert(
+          "Form submitted successfully! We'll be in touch within 1 business day."
+        );
+      }
+    </script>
+  </body>
+</html>

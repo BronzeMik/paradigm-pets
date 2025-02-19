@@ -1,0 +1,173 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Homepage</title>
+    <link rel="stylesheet" href="./styles/stylesheet.css" />
+    <link rel="stylesheet" href="./styles/pet-page-styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"><img src="./images/Paradigm_Pet_logo.png" alt="Paradigm Pet Professionals Logo" /></a>
+      </div>
+
+      <div class="nav-container">
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Nav -->
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#pet-care" class="dropbtn">Pet Care</a>
+              <ul class="dropdown-menu">
+                <li><a href="cats.html">Cats: Care & Nutrition</a></li>
+                <li><a href="dogs.html">Dogs: Training & Health</a></li>
+                <li><a href="small-animals.html">Small Animals: Housing & Care</a></li>
+              </ul>
+            </li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </nav>
+
+        <!-- Search -->
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">
+            <img src="./images/search-icon.png" alt="Search Icon" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumn -->
+        <nav class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>></li>
+            <li>Dogs: Training & Health</li>
+          </ul>
+        </nav>
+
+        <div class="pet-page">
+            <!-- main content -->
+         <article>
+
+            <!-- Article Header -->
+            <div class="pet-page-header">
+              <h1>Dogs: Training & Health</h1>
+              <img src="./images/dog_article.jpg" alt="Dog Care" />
+            </div>
+
+            <!-- Article Content -->
+             <div  class="pet-page-content">
+
+                <!-- Overview -->
+                <div class="pet-page-overview">
+                    <p>The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.</p>
+
+                    <br />
+                    <p style="font-size: 1.2em;">Find dog activities near you with <strong><a href="https://www.bringfido.com/attraction/city/cleveland_oh_us/" target="_blank">Bring Fido</a></strong>!</p>
+                </div>
+
+                <!-- Table of contents -->
+                <div class="pet-page-toc">
+                    <h2>Table of Contents</h2>
+                    <ul>
+                        <li><a href="#diet">Diet & Exercise</a></li>
+                        <li><a href="#grooming">Grooming & Handling</a></li>
+                        <li><a href="#vaccination">Vaccinations & Medications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Content -->
+                 <div class="pet-page-content-container">
+
+
+                    <div id="diet" class="pet-content-item">
+                        <h2>Diet & Exercise</h2>
+                        <p>Throughout dogs&apos; lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months years old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. And a dog&apos;s typical body mass is composed of somewhere between 60 and 70 percent water. The ASPCA says just a 10 percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated!</p>
+                        
+                        <br>
+                        <p>Much like humans, dogs need to have a healthy level of activity to keep their organs healthy, as well as sun and fresh air. The minimum recommended time for exercise varies greatly with breed and size differences, but generally a range of 30–120 minutes of exercise is recommended per day! Can you imagine exercising two hours per day? OK, I know that wouldn't bother some of you reading this. But the thought of it to me makes me cringe! And by the way, exercising your dog does not mean you are being challenged to a push-up contest. Brisk walks are OK too! You can also choose from a variety of toys to encourage physical activity; just be sure they are age appropriate and do not pose a choking hazard. Pay careful attention to toys that require supervision.</p>
+                    </div>
+
+                    <div id="grooming" class="pet-content-item">
+                        <h2>Grooming & Handling</h2>
+                        <p>Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas. Bathing is not only important to your dog&apos;s health but can be an exercise depending on how strong willed the dog is. Rinse <strong>all</strong> of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions. And as always, be careful how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.</p>              
+                    </div>
+
+
+                    <div id="vaccination" class="pet-content-item">
+                        <h2>Vaccinations & Medications</h2>
+                        <p>You should always consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include <a href="https://www.aspca.org/pet-care/general-pet-care/vaccinations-your-pet" target="_blank">Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.</a></p>              
+                    </div>
+
+                 </div>
+             </div>
+         </article>
+
+         <!-- aside -->
+          <aside>
+            <h2>Related Links</h2>
+            <ul>
+              <li><a href="cats.html">Cats: Care & Nutrition</a></li>
+              <li><a href="small-animals.html">Small Animals: Housing & Care</a></li>
+            </ul>
+          </aside>
+        </div>
+        
+    </main>
+   <!-- Footer -->
+   <footer>
+    <section class="footer-content">
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cats.html">Cats: Care & Nutrition</a></li>
+          <li><a href="dogs.html">Dogs: Training & Health</a></li>
+          <li><a href="small-animals.html">Small Animals: Housing & Care</a></li>
+          <li><a href="faqs.html">Faqs</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@Paradigm Pet Professionals.com</p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <p>&copy; 2025 Paradigm Pet Professionals. All rights reserved.</p>
+    </section>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    });
+
+    function submitForm() {
+      alert("Form submitted successfully! We'll be in touch within 1 business day.");
+    }
+  </script>
+</body>
+</html>
